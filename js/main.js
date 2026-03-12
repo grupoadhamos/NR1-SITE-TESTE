@@ -65,8 +65,24 @@ if (leadForm) {
             if (!response.ok) throw new Error('Erro ao enviar');
             */
             
-            // Simulação de envio bem-sucedido
-            console.log('Lead capturado:', formData);
+           try {
+
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw1FdjE1Uv3Lf4zS2GmZ-VGshQvMnF1bu_2v5Dms7zITkyRirksDloBbhWLbjKFdjpvdg/exec
+";
+
+const response = await fetch(SCRIPT_URL, {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(formData)
+});
+
+const result = await response.text();
+console.log(result);
+
+leadForm.style.display = 'none';
+successMessage.style.display = 'block';
             
             // Esconde formulário e mostra mensagem de sucesso
             leadForm.style.display = 'none';

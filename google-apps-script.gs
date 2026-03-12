@@ -9,7 +9,7 @@
 function doPost(e) {
   try {
     // ID da sua planilha do Google Sheets
-    const SHEET_ID = 'COLE SEU CODIGO AQUI';
+    const SHEET_ID = 'COLE_SEU_CODIGO_AQUI';
     const sheet = SpreadsheetApp.openById(SHEET_ID).getActiveSheet();
     
     // Parse dos dados recebidos

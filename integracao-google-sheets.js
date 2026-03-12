@@ -17,7 +17,7 @@ leadForm.addEventListener('submit', async (e) => {
     
     try {
         // URL do Google Apps Script Web App
-        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzflIEiy6V3G5yy2K0qUGXQo-SllGgnnsu8KdkifnHibmB8xkwsJEqhMF-9VykFjyjT/exec';
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw1FdjE1Uv3Lf4zS2GmZ-VGshQvMnF1bu_2v5Dms7zITkyRirksDloBbhWLbjKFdjpvdg/exec';
         
         const response = await fetch(SCRIPT_URL, {
             method: 'POST',
